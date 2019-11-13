@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <stdlib.h>
 #include <conio.h>
 #include <string>
@@ -8,7 +8,7 @@
 
 using namespace std;
 
-// Прототипы функций
+// РџСЂРѕС‚РѕС‚РёРїС‹ С„СѓРЅРєС†РёР№
 void firstPage();
 void modelBMW();
 void modelMercedes();
@@ -31,33 +31,33 @@ void createMercedes();
 void createPorsche();
 void search(string option, string minValue, string maxValue = "");
 
-// Класс Авто
+// РљР»Р°СЃСЃ РђРІС‚Рѕ
 class Auto
 {
 public:
-	string name, bodyIndex, bodyType, color, engineСapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price;
+	string name, bodyIndex, bodyType, color, engineРЎapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price;
 
 	void show()
 	{
 		system("cls");
 		cout << endl;
-		middle("Технические характеристики");
+		middle("РўРµС…РЅРёС‡РµСЃРєРёРµ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё");
 		cout << endl << endl;
-		cout << "\t\t\t\t\t\tНазвание             " + name << endl << endl;
-		cout << "\t\t\t\t\t\tИндекс кузова        " + bodyIndex << endl << endl;
-		cout << "\t\t\t\t\t\tТип кузова           " + bodyType << endl << endl;
-		cout << "\t\t\t\t\t\tЦвет                 " + color << endl << endl;
-		cout << "\t\t\t\t\t\tОбъём двигателя      " + engineСapacity << endl << endl;
-		cout << "\t\t\t\t\t\tКоличество л/с       " + hp << endl << endl;
-		cout << "\t\t\t\t\t\tКПП                  " + gearbox << endl << endl;
-		cout << "\t\t\t\t\t\tПривод               " + driveUnit << endl << endl;
-		cout << "\t\t\t\t\t\tМакс.скорость        " + maxSpeed << endl << endl;
-		cout << "\t\t\t\t\t\tРазгон до 100 км/ч   " + overclocking << endl << endl;
-		cout << "\t\t\t\t\t\tЦена                 " + price << endl << endl;
+		cout << "\t\t\t\t\t\tРќР°Р·РІР°РЅРёРµ             " + name << endl << endl;
+		cout << "\t\t\t\t\t\tРРЅРґРµРєСЃ РєСѓР·РѕРІР°        " + bodyIndex << endl << endl;
+		cout << "\t\t\t\t\t\tРўРёРї РєСѓР·РѕРІР°           " + bodyType << endl << endl;
+		cout << "\t\t\t\t\t\tР¦РІРµС‚                 " + color << endl << endl;
+		cout << "\t\t\t\t\t\tРћР±СЉС‘Рј РґРІРёРіР°С‚РµР»СЏ      " + engineРЎapacity << endl << endl;
+		cout << "\t\t\t\t\t\tРљРѕР»РёС‡РµСЃС‚РІРѕ Р»/СЃ       " + hp << endl << endl;
+		cout << "\t\t\t\t\t\tРљРџРџ                  " + gearbox << endl << endl;
+		cout << "\t\t\t\t\t\tРџСЂРёРІРѕРґ               " + driveUnit << endl << endl;
+		cout << "\t\t\t\t\t\tРњР°РєСЃ.СЃРєРѕСЂРѕСЃС‚СЊ        " + maxSpeed << endl << endl;
+		cout << "\t\t\t\t\t\tР Р°Р·РіРѕРЅ РґРѕ 100 РєРј/С‡   " + overclocking << endl << endl;
+		cout << "\t\t\t\t\t\tР¦РµРЅР°                 " + price << endl << endl;
 	}
 };
 
-// Класс БМВ
+// РљР»Р°СЃСЃ Р‘РњР’
 class BMW : public Auto
 {
 public:
@@ -65,14 +65,14 @@ public:
 	{
 
 	}
-	BMW(string name, string bodyIndex, string bodyType, string color, string engineСapacity, string hp,
+	BMW(string name, string bodyIndex, string bodyType, string color, string engineРЎapacity, string hp,
 		string gearbox, string driveUnit, string maxSpeed, string overclocking, string price)
 	{
 		this->name = name;
 		this->bodyIndex = bodyIndex;
 		this->bodyType = bodyType;
 		this->color = color;
-		this->engineСapacity = engineСapacity;
+		this->engineРЎapacity = engineРЎapacity;
 		this->hp = hp;
 		this->gearbox = gearbox;
 		this->driveUnit = driveUnit;
@@ -82,7 +82,7 @@ public:
 	}
 };
 
-// Класс Мерседес
+// РљР»Р°СЃСЃ РњРµСЂСЃРµРґРµСЃ
 class Mercedes : public Auto
 {
 public:
@@ -90,14 +90,14 @@ public:
 	{
 
 	}
-	Mercedes(string name, string bodyIndex, string bodyType, string color, string engineСapacity, string hp,
+	Mercedes(string name, string bodyIndex, string bodyType, string color, string engineРЎapacity, string hp,
 		string gearbox, string driveUnit, string maxSpeed, string overclocking, string price)
 	{
 		this->name = name;
 		this->bodyIndex = bodyIndex;
 		this->bodyType = bodyType;
 		this->color = color;
-		this->engineСapacity = engineСapacity;
+		this->engineРЎapacity = engineРЎapacity;
 		this->hp = hp;
 		this->gearbox = gearbox;
 		this->driveUnit = driveUnit;
@@ -107,7 +107,7 @@ public:
 	}
 };
 
-// Класс Ауди
+// РљР»Р°СЃСЃ РђСѓРґРё
 class Audi : public Auto
 {
 public:
@@ -115,14 +115,14 @@ public:
 	{
 
 	}
-	Audi(string name, string bodyIndex, string bodyType, string color, string engineСapacity, string hp,
+	Audi(string name, string bodyIndex, string bodyType, string color, string engineРЎapacity, string hp,
 		string gearbox, string driveUnit, string maxSpeed, string overclocking, string price)
 	{
 		this->name = name;
 		this->bodyIndex = bodyIndex;
 		this->bodyType = bodyType;
 		this->color = color;
-		this->engineСapacity = engineСapacity;
+		this->engineРЎapacity = engineРЎapacity;
 		this->hp = hp;
 		this->gearbox = gearbox;
 		this->driveUnit = driveUnit;
@@ -132,7 +132,7 @@ public:
 	}
 };
 
-// Класс Порше
+// РљР»Р°СЃСЃ РџРѕСЂС€Рµ
 class Porsche : public Auto
 {
 public:
@@ -140,14 +140,14 @@ public:
 	{
 
 	}
-	Porsche(string name, string bodyIndex, string bodyType, string color, string engineСapacity, string hp,
+	Porsche(string name, string bodyIndex, string bodyType, string color, string engineРЎapacity, string hp,
 		string gearbox, string driveUnit, string maxSpeed, string overclocking, string price)
 	{
 		this->name = name;
 		this->bodyIndex = bodyIndex;
 		this->bodyType = bodyType;
 		this->color = color;
-		this->engineСapacity = engineСapacity;
+		this->engineРЎapacity = engineРЎapacity;
 		this->hp = hp;
 		this->gearbox = gearbox;
 		this->driveUnit = driveUnit;
@@ -157,13 +157,13 @@ public:
 	}
 };
 
-// Вектор всех машин
+// Р’РµРєС‚РѕСЂ РІСЃРµС… РјР°С€РёРЅ
 vector<Auto>cars;
 
-// Вектор машин по параметрам
+// Р’РµРєС‚РѕСЂ РјР°С€РёРЅ РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј
 vector<Auto>tempCars;
 
-// Главная функция
+// Р“Р»Р°РІРЅР°СЏ С„СѓРЅРєС†РёСЏ
 int main()
 {
 	setlocale(LC_ALL, "Rus");
@@ -184,7 +184,7 @@ int main()
 			firstPage();
 		}
 		temp = false;
-		middle("1 - Просмотреть автомобили    2 - Расширенный поиск    0 - Покинуть приложение");
+		middle("1 - РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ Р°РІС‚РѕРјРѕР±РёР»Рё    2 - Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ РїРѕРёСЃРє    0 - РџРѕРєРёРЅСѓС‚СЊ РїСЂРёР»РѕР¶РµРЅРёРµ");
 		switcher = _getch() - 48;
 		cout << endl;
 		switch (switcher)
@@ -195,9 +195,9 @@ int main()
 			do {
 				system("cls");
 				cout << endl;
-				middle("Просмотр автомобилей");
+				middle("РџСЂРѕСЃРјРѕС‚СЂ Р°РІС‚РѕРјРѕР±РёР»РµР№");
 				cout << endl << endl;
-				middle("Выберите марку: ");
+				middle("Р’С‹Р±РµСЂРёС‚Рµ РјР°СЂРєСѓ: ");
 				mark();
 				selection = _getch() - 48;
 				cout << endl;
@@ -206,7 +206,7 @@ int main()
 				int intTemp = 0;
 				do {
 					intTemp = 0;
-					middle("1 - Просмотреть другие автомобили     0 - Назад в главное меню");
+					middle("1 - РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РґСЂСѓРіРёРµ Р°РІС‚РѕРјРѕР±РёР»Рё     0 - РќР°Р·Р°Рґ РІ РіР»Р°РІРЅРѕРµ РјРµРЅСЋ");
 					count = _getch() - 48;
 					if (count == 1)
 					{
@@ -221,7 +221,7 @@ int main()
 					else
 					{
 						cout << endl;
-						middle("Извините, но такой команды не существует!");
+						middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 						cout << endl;
 						intTemp = 1;
 					}
@@ -238,14 +238,14 @@ int main()
 		case 0:
 		{
 			cout << endl;
-			middle("Всего доброго!");
+			middle("Р’СЃРµРіРѕ РґРѕР±СЂРѕРіРѕ!");
 			cout << endl;
 			break;
 		}
 		default:
 		{
 			cout << endl;
-			middle("Извините, но такой команды не существует!");
+			middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 			cout << endl << endl;
 			break;
 		}
@@ -254,15 +254,15 @@ int main()
 	return 0;
 }
 
-// Приветствие
+// РџСЂРёРІРµС‚СЃС‚РІРёРµ
 void firstPage()
 {
 	cout << endl;
-	middle("Добро пожаловать на Autoplace");
+	middle("Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° Autoplace");
 	cout << endl;
 }
 
-// Функция вывода марок автомобилей
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РјР°СЂРѕРє Р°РІС‚РѕРјРѕР±РёР»РµР№
 void mark()
 {
 	cout << endl;
@@ -272,7 +272,7 @@ void mark()
 	cout << "\t\t\t\t\t\t\t 4. Porsche\n" << endl;
 }
 
-// Функция вывода моделей БМВ
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РјРѕРґРµР»РµР№ Р‘РњР’
 void modelBMW()
 {
 	cout << endl;
@@ -282,7 +282,7 @@ void modelBMW()
 	cout << "\t\t\t\t\t\t    4. M5           8. Z4M\n" << endl;
 }
 
-// Функция вывода моделей Мерседеса
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РјРѕРґРµР»РµР№ РњРµСЂСЃРµРґРµСЃР°
 void modelMercedes()
 {
 	cout << endl;
@@ -292,7 +292,7 @@ void modelMercedes()
 	cout << "\t\t\t\t\t       4. G63 AMG          8. GLS63 AMG\n" << endl;
 }
 
-// Функция вывода моделей Ауди
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РјРѕРґРµР»РµР№ РђСѓРґРё
 void modelAudi()
 {
 	cout << endl;
@@ -302,7 +302,7 @@ void modelAudi()
 	cout << "\t\t\t\t\t\t   4. RS5          8. TT RS\n" << endl;
 }
 
-// Функция вывода моделей Порше
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РјРѕРґРµР»РµР№ РџРѕСЂС€Рµ
 void modelPorsche()
 {
 	cout << endl;
@@ -312,7 +312,7 @@ void modelPorsche()
 	cout << "\t\t\t\t\t    4. Cayman GTS           8. 911 GT2 RS\n" << endl;
 }
 
-// Вывод текста на центр экрана
+// Р’С‹РІРѕРґ С‚РµРєСЃС‚Р° РЅР° С†РµРЅС‚СЂ СЌРєСЂР°РЅР°
 void middle(const string& s)
 {
 	int width_field = 127;
@@ -335,7 +335,7 @@ void middle(const string& s)
 	cout << endl;
 }
 
-// Функция выбора марок автомобилей
+// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° РјР°СЂРѕРє Р°РІС‚РѕРјРѕР±РёР»РµР№
 void classSelectionMark(int choice)
 {
 	switch (choice)
@@ -343,7 +343,7 @@ void classSelectionMark(int choice)
 		int value;
 	case 1:
 	{
-		middle("Выберите модель:");
+		middle("Р’С‹Р±РµСЂРёС‚Рµ РјРѕРґРµР»СЊ:");
 		modelBMW();
 		value = _getch() - 48;
 		cout << endl;
@@ -352,7 +352,7 @@ void classSelectionMark(int choice)
 	}
 	case 2:
 	{
-		middle("Выберите модель:");
+		middle("Р’С‹Р±РµСЂРёС‚Рµ РјРѕРґРµР»СЊ:");
 		modelMercedes();
 		value = _getch() - 48;
 		cout << endl;
@@ -361,7 +361,7 @@ void classSelectionMark(int choice)
 	}
 	case 3:
 	{
-		middle("Выберите модель:");
+		middle("Р’С‹Р±РµСЂРёС‚Рµ РјРѕРґРµР»СЊ:");
 		modelAudi();
 		value = _getch() - 48;
 		cout << endl;
@@ -370,7 +370,7 @@ void classSelectionMark(int choice)
 	}
 	case 4:
 	{
-		middle("Выберите модель:");
+		middle("Р’С‹Р±РµСЂРёС‚Рµ РјРѕРґРµР»СЊ:");
 		modelPorsche();
 		value = _getch() - 48;
 		cout << endl;
@@ -379,13 +379,13 @@ void classSelectionMark(int choice)
 	}
 	default:
 	{
-		middle("Извините, но такой команды не существует!");
+		middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 		cout << endl;
 	}
 	}
 }
 
-// Функция выбора моделей БМВ
+// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° РјРѕРґРµР»РµР№ Р‘РњР’
 void classSelectionBMW(int choice)
 {
 	switch (choice)
@@ -432,13 +432,13 @@ void classSelectionBMW(int choice)
 	}
 	default:
 	{
-		middle("Извините, но такой команды не существует!");
+		middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 		cout << endl;
 	}
 	}
 }
 
-// Функция выбора моделей Мерседес
+// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° РјРѕРґРµР»РµР№ РњРµСЂСЃРµРґРµСЃ
 void classSelectionMercedes(int choice)
 {
 	switch (choice)
@@ -485,13 +485,13 @@ void classSelectionMercedes(int choice)
 	}
 	default:
 	{
-		middle("Извините, но такой команды не существует!");
+		middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 		cout << endl;
 	}
 	}
 }
 
-// Функция выбора моделей Ауди
+// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° РјРѕРґРµР»РµР№ РђСѓРґРё
 void classSelectionAudi(int choice)
 {
 	switch (choice)
@@ -538,13 +538,13 @@ void classSelectionAudi(int choice)
 	}
 	default:
 	{
-		middle("Извините, но такой команды не существует!");
+		middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 		cout << endl;
 	}
 	}
 }
 
-// Функция выбора моделей Порше
+// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° РјРѕРґРµР»РµР№ РџРѕСЂС€Рµ
 void classSelectionPorsche(int choice)
 {
 	switch (choice)
@@ -591,13 +591,13 @@ void classSelectionPorsche(int choice)
 	}
 	default:
 	{
-		middle("Извините, но такой команды не существует!");
+		middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 		cout << endl;
 	}
 	}
 }
 
-// Перегрузка оператора "<<"
+// РџРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С‚РѕСЂР° "<<"
 ostream& operator<<(ostream& os, const Auto point)
 {
 	{
@@ -606,18 +606,18 @@ ostream& operator<<(ostream& os, const Auto point)
 	return os;
 }
 
-// Функция расширенного поиска
+// Р¤СѓРЅРєС†РёСЏ СЂР°СЃС€РёСЂРµРЅРЅРѕРіРѕ РїРѕРёСЃРєР°
 void findCars()
 {
 	system("cls");
 	cout << endl;
-	middle("Расширенный поиск");
+	middle("Р Р°СЃС€РёСЂРµРЅРЅС‹Р№ РїРѕРёСЃРє");
 	cout << endl;
 	int command;
 	string index, bloom, type, before, from, from2, before2;
 	do {
 		cout << endl;
-		middle("Выберите параметры поиска:");
+		middle("Р’С‹Р±РµСЂРёС‚Рµ РїР°СЂР°РјРµС‚СЂС‹ РїРѕРёСЃРєР°:");
 		parameters();
 		command = _getch() - 48;
 		switch (command)
@@ -626,11 +626,11 @@ void findCars()
 		{
 			system("cls");
 			cout << endl;
-			middle("Поиск по мощности");
-			cout << "\n\t\t\t\t\t\t Введите мощность автомобиля:" << endl;
-			cout << "\n\t\t\t\t\t\t    Мощность, л.с. от: ";
+			middle("РџРѕРёСЃРє РїРѕ РјРѕС‰РЅРѕСЃС‚Рё");
+			cout << "\n\t\t\t\t\t\t Р’РІРµРґРёС‚Рµ РјРѕС‰РЅРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ:" << endl;
+			cout << "\n\t\t\t\t\t\t    РњРѕС‰РЅРѕСЃС‚СЊ, Р».СЃ. РѕС‚: ";
 			cin >> from;
-			cout << "\n\t\t\t\t\t\t    Мощность, л.с. до: ";
+			cout << "\n\t\t\t\t\t\t    РњРѕС‰РЅРѕСЃС‚СЊ, Р».СЃ. РґРѕ: ";
 			cin >> before;
 			search("hp", from, before);
 			command = back(command);
@@ -641,8 +641,8 @@ void findCars()
 		{
 			system("cls");
 			cout << endl;
-			middle("Поиск по типу кузова");
-			cout << "\n\t\t\t\t  Введите тип кузова автомобиля с заглавной буквы: ";
+			middle("РџРѕРёСЃРє РїРѕ С‚РёРїСѓ РєСѓР·РѕРІР°");
+			cout << "\n\t\t\t\t  Р’РІРµРґРёС‚Рµ С‚РёРї РєСѓР·РѕРІР° Р°РІС‚РѕРјРѕР±РёР»СЏ СЃ Р·Р°РіР»Р°РІРЅРѕР№ Р±СѓРєРІС‹: ";
 			cin >> type;
 			search("bodyType", type);
 			command = back(command);
@@ -652,8 +652,8 @@ void findCars()
 		{
 			system("cls");
 			cout << endl;
-			middle("Поиск по индексу кузова");
-			cout << "\n\t\t\t      Введите индекс кузова автомобиля с заглавной буквы (если присутствует): ";
+			middle("РџРѕРёСЃРє РїРѕ РёРЅРґРµРєСЃСѓ РєСѓР·РѕРІР°");
+			cout << "\n\t\t\t      Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ РєСѓР·РѕРІР° Р°РІС‚РѕРјРѕР±РёР»СЏ СЃ Р·Р°РіР»Р°РІРЅРѕР№ Р±СѓРєРІС‹ (РµСЃР»Рё РїСЂРёСЃСѓС‚СЃС‚РІСѓРµС‚): ";
 			cin >> index;
 			search("bodyIndex", index);
 			command = back(command);
@@ -663,8 +663,8 @@ void findCars()
 		{
 			system("cls");
 			cout << endl;
-			middle("Поиск по цвету");
-			cout << "\n\t\t\t\t\tВведите цвет автомобиля c заглавной буквы: ";
+			middle("РџРѕРёСЃРє РїРѕ С†РІРµС‚Сѓ");
+			cout << "\n\t\t\t\t\tР’РІРµРґРёС‚Рµ С†РІРµС‚ Р°РІС‚РѕРјРѕР±РёР»СЏ c Р·Р°РіР»Р°РІРЅРѕР№ Р±СѓРєРІС‹: ";
 			cin >> bloom;
 			search("colour", bloom);
 			command = back(command);
@@ -674,11 +674,11 @@ void findCars()
 		{
 			system("cls");
 			cout << endl;
-			middle("Поиск по цене");
-			cout << "\n\t\t\t\t\t\t   Введите цену автомобиля:" << endl;
-			cout << "\n\t\t\t\t\t\t      Цена, от: ";
+			middle("РџРѕРёСЃРє РїРѕ С†РµРЅРµ");
+			cout << "\n\t\t\t\t\t\t   Р’РІРµРґРёС‚Рµ С†РµРЅСѓ Р°РІС‚РѕРјРѕР±РёР»СЏ:" << endl;
+			cout << "\n\t\t\t\t\t\t      Р¦РµРЅР°, РѕС‚: ";
 			cin >> from2;
-			cout << "\n\t\t\t\t\t\t      Цена, до: ";
+			cout << "\n\t\t\t\t\t\t      Р¦РµРЅР°, РґРѕ: ";
 			cin >> before2;
 			search("price", from2, before2);
 			command = back(command);
@@ -693,7 +693,7 @@ void findCars()
 		{
 			system("cls");
 			cout << endl;
-			middle("Извините, но такой команды не существует!");
+			middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 			cout << endl;
 			break;
 		}
@@ -701,19 +701,19 @@ void findCars()
 	} while (command != 0);
 }
 
-// Функция вывода параметров поиска
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РїР°СЂР°РјРµС‚СЂРѕРІ РїРѕРёСЃРєР°
 void parameters()
 {
 	cout << endl;
-	cout << "\t\t\t\t\t\t     1. Поиск по мощности\n" << endl;
-	cout << "\t\t\t\t\t\t     2. Поиск по типу кузова\n" << endl;
-	cout << "\t\t\t\t\t\t     3. Поиск по индексу кузова\n" << endl;
-	cout << "\t\t\t\t\t\t     4. Поиск по цвету\n" << endl;
-	cout << "\t\t\t\t\t\t     5. Поиск по цене\n" << endl;
-	cout << "\t\t\t\t\t\t     0. Назад в главное меню\n" << endl;
+	cout << "\t\t\t\t\t\t     1. РџРѕРёСЃРє РїРѕ РјРѕС‰РЅРѕСЃС‚Рё\n" << endl;
+	cout << "\t\t\t\t\t\t     2. РџРѕРёСЃРє РїРѕ С‚РёРїСѓ РєСѓР·РѕРІР°\n" << endl;
+	cout << "\t\t\t\t\t\t     3. РџРѕРёСЃРє РїРѕ РёРЅРґРµРєСЃСѓ РєСѓР·РѕРІР°\n" << endl;
+	cout << "\t\t\t\t\t\t     4. РџРѕРёСЃРє РїРѕ С†РІРµС‚Сѓ\n" << endl;
+	cout << "\t\t\t\t\t\t     5. РџРѕРёСЃРє РїРѕ С†РµРЅРµ\n" << endl;
+	cout << "\t\t\t\t\t\t     0. РќР°Р·Р°Рґ РІ РіР»Р°РІРЅРѕРµ РјРµРЅСЋ\n" << endl;
 }
 
-// Функция расширенного поиска по параметрам
+// Р¤СѓРЅРєС†РёСЏ СЂР°СЃС€РёСЂРµРЅРЅРѕРіРѕ РїРѕРёСЃРєР° РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј
 void search(string option, string minValue, string maxValue)
 {
 	int temp = 0, counter = 1;
@@ -726,11 +726,11 @@ void search(string option, string minValue, string maxValue)
 			{
 				if (counter < 10)
 				{
-					cout << "\t\t\t\t\t\t  " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t  " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				else
 				{
-					cout << "\t\t\t\t\t\t " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				cout << i << endl;
 				temp = 1;
@@ -751,11 +751,11 @@ void search(string option, string minValue, string maxValue)
 			{
 				if (counter < 10)
 				{
-					cout << "\t\t\t\t\t\t  " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t  " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				else
 				{
-					cout << "\t\t\t\t\t\t " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				cout << i << endl;
 				temp = 1;
@@ -776,11 +776,11 @@ void search(string option, string minValue, string maxValue)
 			{
 				if (counter < 10)
 				{
-					cout << "\t\t\t\t\t\t  " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t  " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				else
 				{
-					cout << "\t\t\t\t\t\t " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				cout << i << endl;
 				temp = 1;
@@ -801,11 +801,11 @@ void search(string option, string minValue, string maxValue)
 			{
 				if (counter < 10)
 				{
-					cout << "\t\t\t\t\t\t  " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t  " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				else
 				{
-					cout << "\t\t\t\t\t\t " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				cout << i << endl;
 				temp = 1;
@@ -826,11 +826,11 @@ void search(string option, string minValue, string maxValue)
 			{
 				if (counter < 10)
 				{
-					cout << "\t\t\t\t\t\t  " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t  " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				else
 				{
-					cout << "\t\t\t\t\t\t " << counter << ". Автомобиль ";
+					cout << "\t\t\t\t\t\t " << counter << ". РђРІС‚РѕРјРѕР±РёР»СЊ ";
 				}
 				cout << i << endl;
 				temp = 1;
@@ -845,22 +845,22 @@ void search(string option, string minValue, string maxValue)
 	}
 	if (temp == 0)
 	{
-		middle("Ничего не найдено!");
+		middle("РќРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ!");
 		cout << endl;
 	}
 }
 
-// Функция просмотра автомобиля подробнее
+// Р¤СѓРЅРєС†РёСЏ РїСЂРѕСЃРјРѕС‚СЂР° Р°РІС‚РѕРјРѕР±РёР»СЏ РїРѕРґСЂРѕР±РЅРµРµ
 void Selection()
 {
 	bool temp = false;
 	int count;
 	string tempCount;
 	cout << endl;
-	middle("Какой автомобиль желаете просмотреть подробнее?");
+	middle("РљР°РєРѕР№ Р°РІС‚РѕРјРѕР±РёР»СЊ Р¶РµР»Р°РµС‚Рµ РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РїРѕРґСЂРѕР±РЅРµРµ?");
 	cout << endl;
 	do {
-		cout << "\t\t\t\t\t\t\tВведите номер: ";
+		cout << "\t\t\t\t\t\t\tР’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ: ";
 		cin >> tempCount;
 		count = atoi(tempCount.c_str());
 		if (count > 0 && count <= tempCars.size())
@@ -872,20 +872,20 @@ void Selection()
 		else
 		{
 			cout << endl;
-			middle("Автомобиль под таким номером не найден!");
+			middle("РђРІС‚РѕРјРѕР±РёР»СЊ РїРѕРґ С‚Р°РєРёРј РЅРѕРјРµСЂРѕРј РЅРµ РЅР°Р№РґРµРЅ!");
 			cout << endl;
 		}
 	} while (!temp);
 }
 
-// Функция выхода
+// Р¤СѓРЅРєС†РёСЏ РІС‹С…РѕРґР°
 int back(int command)
 {
 	bool temp = false;
 	int back, rez = command;
 	do {
 		cout << endl;
-		middle("1 - Назад в расширенный поиск    0 - Назад в главное меню");
+		middle("1 - РќР°Р·Р°Рґ РІ СЂР°СЃС€РёСЂРµРЅРЅС‹Р№ РїРѕРёСЃРє    0 - РќР°Р·Р°Рґ РІ РіР»Р°РІРЅРѕРµ РјРµРЅСЋ");
 		back = _getch() - 48;
 		if (back == 1)
 		{
@@ -901,449 +901,449 @@ int back(int command)
 		else
 		{
 			cout << endl << endl;
-			middle("Извините, но такой команды не существует!");
+			middle("РР·РІРёРЅРёС‚Рµ, РЅРѕ С‚Р°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
 			cout << endl;
 		}
 	} while (!temp);
 	return rez;
 }
 
-// Функция заполнения полей BMW
+// Р¤СѓРЅРєС†РёСЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РїРѕР»РµР№ BMW
 void createBMW()
 {
 	string name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price;
 
 	name = "BMW M2";
 	bodyIndex = "F87";
-	bodyType = "Купе";
-	color = "Синий";
-	engineCapacity = "3.0 л";
+	bodyType = "РљСѓРїРµ";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "3.0 Р»";
 	hp = "410";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.2 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.2 СЃ";
 	price = "4380000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW M3";
 	bodyIndex = "F80";
-	bodyType = "Седан";
-	color = "Голубой";
-	engineCapacity = "3.0 л";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "Р“РѕР»СѓР±РѕР№";
+	engineCapacity = "3.0 Р»";
 	hp = "431";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.1 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.1 СЃ";
 	price = "4500000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW M4";
 	bodyIndex = "F82";
-	bodyType = "Седан";
-	color = "Золотой";
-	engineCapacity = "3.0 л";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "Р—РѕР»РѕС‚РѕР№";
+	engineCapacity = "3.0 Р»";
 	hp = "431";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.1 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.1 СЃ";
 	price = "5120000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW M5";
 	bodyIndex = "F90";
-	bodyType = "Седан";
-	color = "Бордовый";
-	engineCapacity = "4.4 л";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "Р‘РѕСЂРґРѕРІС‹Р№";
+	engineCapacity = "4.4 Р»";
 	hp = "600";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.4 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.4 СЃ";
 	price = "9550000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW M6";
 	bodyIndex = "F12";
-	bodyType = "Купе";
-	color = "Чёрный";
-	engineCapacity = "4.4 л";
+	bodyType = "РљСѓРїРµ";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "4.4 Р»";
 	hp = "560";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.2 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.2 СЃ";
 	price = "3000000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW X5M";
 	bodyIndex = "F85";
-	bodyType = "Внедорожник";
-	color = "Белый";
-	engineCapacity = "4.4 л";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р‘РµР»С‹Р№";
+	engineCapacity = "4.4 Р»";
 	hp = "575";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.2 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.2 СЃ";
 	price = "7560000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW X6M";
 	bodyIndex = "F86";
-	bodyType = "Внедорожник";
-	color = "Голубой";
-	engineCapacity = "4.4 л";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р“РѕР»СѓР±РѕР№";
+	engineCapacity = "4.4 Р»";
 	hp = "575";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.2 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.2 СЃ";
 	price = "7650000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "BMW Z4M";
 	bodyIndex = "E85";
-	bodyType = "Родстер";
-	color = "Красный";
-	engineCapacity = "3.3 л";
+	bodyType = "Р РѕРґСЃС‚РµСЂ";
+	color = "РљСЂР°СЃРЅС‹Р№";
+	engineCapacity = "3.3 Р»";
 	hp = "343";
-	gearbox = "Механическая";
-	driveUnit = "Задний";
-	maxSpeed = "250 км/ч";
-	overclocking = "5.0 с";
+	gearbox = "РњРµС…Р°РЅРёС‡РµСЃРєР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "5.0 СЃ";
 	price = "1500000";
 	cars.push_back(BMW(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 }
 
-// Функция заполнения полей Mercedes
+// Р¤СѓРЅРєС†РёСЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РїРѕР»РµР№ Mercedes
 void createMercedes()
 {
 	string name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price;
 
 	name = "Mercedes C63 AMG";
 	bodyIndex = "W205";
-	bodyType = "Седан";
-	color = "Синий";
-	engineCapacity = "3.0 л";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "3.0 Р»";
 	hp = "390";
-	gearbox = "Автоматическая";
-	driveUnit = "Задний";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.7 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.7 СЃ";
 	price = "5300000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes E63 AMG";
 	bodyIndex = "W213";
-	bodyType = "Седан";
-	color = "Чёрный";
-	engineCapacity = "4.0 л";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "4.0 Р»";
 	hp = "612";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.4 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.4 СЃ";
 	price = "9250000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes S63 AMG";
 	bodyIndex = "W222";
-	bodyType = "Седан";
-	color = "Чёрный";
-	engineCapacity = "4.0 л";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "4.0 Р»";
 	hp = "612";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.5 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.5 СЃ";
 	price = "12100000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes G63 AMG";
 	bodyIndex = "W464";
-	bodyType = "Внедорожник";
-	color = "Чёрный";
-	engineCapacity = "5.5 л";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "5.5 Р»";
 	hp = "585";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.5 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.5 СЃ";
 	price = "14200000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes CLS63 AMG";
-	bodyIndex = "С257";
-	bodyType = "Седан";
-	color = "Чёрный";
-	engineCapacity = "3.0 л";
+	bodyIndex = "РЎ257";
+	bodyType = "РЎРµРґР°РЅ";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "3.0 Р»";
 	hp = "435";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.5 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.5 СЃ";
 	price = "7600000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes GLE63 AMG";
 	bodyIndex = "W166";
-	bodyType = "Внедорожник";
-	color = "Белый";
-	engineCapacity = "5.5 л";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р‘РµР»С‹Р№";
+	engineCapacity = "5.5 Р»";
 	hp = "585";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.2 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.2 СЃ";
 	price = "8470000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes GLC63 AMG";
 	bodyIndex = "X253";
-	bodyType = "Внедорожник";
-	color = "Чёрный";
-	engineCapacity = "4.0 л";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "4.0 Р»";
 	hp = "510";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.8 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.8 СЃ";
 	price = "6500000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Mercedes GLS63 AMG";
 	bodyIndex = "X166";
-	bodyType = "Внедорожник";
-	color = "Синий";
-	engineCapacity = "5.5 л";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "5.5 Р»";
 	hp = "585";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.6 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.6 СЃ";
 	price = "11440000";
 	cars.push_back(Mercedes(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 }
 
-// Функция заполнения полей Audi
+// Р¤СѓРЅРєС†РёСЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РїРѕР»РµР№ Audi
 void createAudi()
 {
 	string name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price;
 
 	name = "Audi RS2";
-	bodyIndex = "Отсутствует";
-	bodyType = "Универсал";
-	color = "Синий";
-	engineCapacity = "2.2 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "РЈРЅРёРІРµСЂСЃР°Р»";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "2.2 Р»";
 	hp = "215";
-	gearbox = "Механическая";
-	driveUnit = "Полный";
-	maxSpeed = "262 км/ч";
-	overclocking = "5.4 с";
+	gearbox = "РњРµС…Р°РЅРёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "262 РєРј/С‡";
+	overclocking = "5.4 СЃ";
 	price = "2000000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi RS3";
-	bodyIndex = "Отсутствует";
-	bodyType = "Хэтчбек";
-	color = "Чёрный";
-	engineCapacity = "2.5 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "РҐСЌС‚С‡Р±РµРє";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "2.5 Р»";
 	hp = "367";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.5 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.5 СЃ";
 	price = "2700000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi RS4";
 	bodyIndex = "B9";
-	bodyType = "Универсал";
-	color = "Серый";
-	engineCapacity = "2.9 л";
+	bodyType = "РЈРЅРёРІРµСЂСЃР°Р»";
+	color = "РЎРµСЂС‹Р№";
+	engineCapacity = "2.9 Р»";
 	hp = "450";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.1 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.1 СЃ";
 	price = "6300000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi RS5";
-	bodyIndex = "Отсутствует";
-	bodyType = "Купе";
-	color = "Зелёный";
-	engineCapacity = "2.9 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "РљСѓРїРµ";
+	color = "Р—РµР»С‘РЅС‹Р№";
+	engineCapacity = "2.9 Р»";
 	hp = "450";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.9 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.9 СЃ";
 	price = "6500000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi RS6";
 	bodyIndex = "C7";
-	bodyType = "Универсал";
-	color = "Синий";
-	engineCapacity = "4.0 л";
+	bodyType = "РЈРЅРёРІРµСЂСЃР°Р»";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "4.0 Р»";
 	hp = "605";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.7 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.7 СЃ";
 	price = "9400000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi RS7";
-	bodyIndex = "Отсутствует";
-	bodyType = "Лифтбек";
-	color = "Серебристый";
-	engineCapacity = "4.0 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "Р›РёС„С‚Р±РµРє";
+	color = "РЎРµСЂРµР±СЂРёСЃС‚С‹Р№";
+	engineCapacity = "4.0 Р»";
 	hp = "605";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.7 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.7 СЃ";
 	price = "8600000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi RSQ3";
-	bodyIndex = "Отсутствует";
-	bodyType = "Внедорожник";
-	color = "Красный";
-	engineCapacity = "5.5 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "РљСЂР°СЃРЅС‹Р№";
+	engineCapacity = "5.5 Р»";
 	hp = "585";
-	gearbox = "Роботизированная";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.8 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.8 СЃ";
 	price = "2470000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Audi TT RS";
 	bodyIndex = "8S";
-	bodyType = "Купе";
-	color = "Синий";
-	engineCapacity = "2.5 л";
+	bodyType = "РљСѓРїРµ";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "2.5 Р»";
 	hp = "400";
-	gearbox = "Роботизированная";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "3.7 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "3.7 СЃ";
 	price = "5460000";
 	cars.push_back(Audi(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 }
 
-// Функция заполнения полей Porsche
+// Р¤СѓРЅРєС†РёСЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РїРѕР»РµР№ Porsche
 void createPorsche()
 {
 	string name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price;
 
 	name = "Porshe 911 Turbo S";
 	bodyIndex = "991";
-	bodyType = "Купе";
-	color = "Жёлтый";
-	engineCapacity = "3.8 л";
+	bodyType = "РљСѓРїРµ";
+	color = "Р–С‘Р»С‚С‹Р№";
+	engineCapacity = "3.8 Р»";
 	hp = "580";
-	gearbox = "Роботизированная";
-	driveUnit = "Полный";
-	maxSpeed = "330 км/ч";
-	overclocking = "3.0 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "330 РєРј/С‡";
+	overclocking = "3.0 СЃ";
 	price = "10250000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche Macan GTS";
-	bodyIndex = "Отсутствует";
-	bodyType = "Внедорожник";
-	color = "Чёрный";
-	engineCapacity = "3.0 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "3.0 Р»";
 	hp = "360";
-	gearbox = "Роботизированная";
-	driveUnit = "Полный";
-	maxSpeed = "256 км/ч";
-	overclocking = "5.2 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "256 РєРј/С‡";
+	overclocking = "5.2 СЃ";
 	price = "4400000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche Cayenne Turbo";
-	bodyIndex = "Отсутствует";
-	bodyType = "Внедорожник";
-	color = "Чёрный";
-	engineCapacity = "4.0 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "Р’РЅРµРґРѕСЂРѕР¶РЅРёРє";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "4.0 Р»";
 	hp = "550";
-	gearbox = "Автоматическая";
-	driveUnit = "Полный";
-	maxSpeed = "250 км/ч";
-	overclocking = "4.1 с";
+	gearbox = "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "250 РєРј/С‡";
+	overclocking = "4.1 СЃ";
 	price = "12100000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche Cayman GTS";
 	bodyIndex = "981";
-	bodyType = "Купе";
-	color = "Белый";
-	engineCapacity = "3.4 л";
+	bodyType = "РљСѓРїРµ";
+	color = "Р‘РµР»С‹Р№";
+	engineCapacity = "3.4 Р»";
 	hp = "340";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "283 км/ч";
-	overclocking = "5.0 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "283 РєРј/С‡";
+	overclocking = "5.0 СЃ";
 	price = "3900000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche Carrera GT";
-	bodyIndex = "Отсутствует";
-	bodyType = "Тарга";
-	color = "Серый";
-	engineCapacity = "5.7 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "РўР°СЂРіР°";
+	color = "РЎРµСЂС‹Р№";
+	engineCapacity = "5.7 Р»";
 	hp = "612";
-	gearbox = "Механическая";
-	driveUnit = "Задний";
-	maxSpeed = "330 км/ч";
-	overclocking = "3.9 с";
+	gearbox = "РњРµС…Р°РЅРёС‡РµСЃРєР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "330 РєРј/С‡";
+	overclocking = "3.9 СЃ";
 	price = "38500000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche Panamera GTS";
-	bodyIndex = "Отсутствует";
-	bodyType = "Хэтчбек";
-	color = "Чёрный";
-	engineCapacity = "5.0 л";
+	bodyIndex = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚";
+	bodyType = "РҐСЌС‚С‡Р±РµРє";
+	color = "Р§С‘СЂРЅС‹Р№";
+	engineCapacity = "5.0 Р»";
 	hp = "550";
-	gearbox = "Роботизированная";
-	driveUnit = "Полный";
-	maxSpeed = "306 км/ч";
-	overclocking = "3.8 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "РџРѕР»РЅС‹Р№";
+	maxSpeed = "306 РєРј/С‡";
+	overclocking = "3.8 СЃ";
 	price = "12500000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche Boxter S";
 	bodyIndex = "981";
-	bodyType = "Родстер";
-	color = "Синий";
-	engineCapacity = "3.4 л";
+	bodyType = "Р РѕРґСЃС‚РµСЂ";
+	color = "РЎРёРЅРёР№";
+	engineCapacity = "3.4 Р»";
 	hp = "315";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "277 км/ч";
-	overclocking = "5.0 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "277 РєРј/С‡";
+	overclocking = "5.0 СЃ";
 	price = "3900000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 
 	name = "Porsche 911 GT2 RS";
 	bodyIndex = "991";
-	bodyType = "Купе";
-	color = "Голубой";
-	engineCapacity = "3.8 л";
+	bodyType = "РљСѓРїРµ";
+	color = "Р“РѕР»СѓР±РѕР№";
+	engineCapacity = "3.8 Р»";
 	hp = "700";
-	gearbox = "Роботизированная";
-	driveUnit = "Задний";
-	maxSpeed = "340 км/ч";
-	overclocking = "2.8 с";
+	gearbox = "Р РѕР±РѕС‚РёР·РёСЂРѕРІР°РЅРЅР°СЏ";
+	driveUnit = "Р—Р°РґРЅРёР№";
+	maxSpeed = "340 РєРј/С‡";
+	overclocking = "2.8 СЃ";
 	price = "27000000";
 	cars.push_back(Porsche(name, bodyIndex, bodyType, color, engineCapacity, hp, gearbox, driveUnit, maxSpeed, overclocking, price));
 }
